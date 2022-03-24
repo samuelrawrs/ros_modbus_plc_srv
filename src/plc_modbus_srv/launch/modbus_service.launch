@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="plc_modbus_srv" type="modbus_plc_server" name="modbus_plc_server" output="screen" >
+        <param name="ip" value="10.10.10.2"/>
+        <rosparam param="coils_addr">[]</rosparam>
+        <rosparam param="regs_addr">[0]</rosparam>
+    </node>
+</launch>
